@@ -17,40 +17,7 @@ $.ajax({
         (function (index) {
             g.children[i].onclick = function () {
                 for (let n = 0; n < data.list[index].partners.length; n++) {
-
-
-                    // $("#container").click(function () {
-                    //     if ($('.value').html() == '') {
-                    //         $('#partners').show();
-                    //         document.getElementById('namePart').innerHTML += ('<div class="name" >' + data.list[index].partners[n].name + '</div>' + '<div class="value">' + data.list[index].partners[n].value + '%' + '</div>' + '<br>');
-                    //     } else {
-                    //         $('#partners').hide();
-                    //     }
-                    // });
-
-
-                    // if (document.getElementById('namePart')) {
                     document.getElementById('namePart').innerHTML += ('<div class="name" >' + data.list[index].partners[n].name + '</div>' + '<div class="value">' + data.list[index].partners[n].value + '%' + '</div>' + '<br>');
-
-                    // } else {
-                    //     document.getElementById('partners').style.display = 'none';
-                    // }
-
-
-
-
-
-
-
-                    // document.getElementById('namePart').innerHTML != ('<div class="name" >' + data.list[index].partners[n].name + '</div>' + '<div class="value">' + data.list[index].partners[n].value + '%' + '</div>' + '<br>');
-                    // $("#container").click(function () {
-                    //     $('#namePart').html('');
-                    // });
-
-
-
-
-
                 }
             }
         })(i);
